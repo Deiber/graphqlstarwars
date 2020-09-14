@@ -1,0 +1,8 @@
+Django==3.0.3
+django-filter==2.3.0
+django-graphql-auth==0.3.12
+graphene==2.1.8
+graphene-django==2.8.0
+graphql-core==2.3.1
+graphql-relay==2.0.1
+wdb==3.3.0

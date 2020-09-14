@@ -1,0 +1,154 @@
+[
+    {
+        "model": "movies.producer",
+        "pk": 1,
+        "fields": {
+            "name": "Producer1",
+            "age": "",
+            "country": "Colombia",
+            "city": "",
+            "address": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "movies.producer",
+        "pk": 2,
+        "fields": {
+            "name": "Producer2",
+            "age": "",
+            "country": "Colombia",
+            "city": "",
+            "address": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "movies.planet",
+        "pk": 1,
+        "fields": {
+            "name": "Earth",
+            "rotation_period": "3.4",
+            "orbital_period": "1.5",
+            "diameter": "456782m",
+            "climate": "warm",
+            "gravity": "10g",
+            "surface_water": "1245121m",
+            "population": "150000000"
+        }
+    },
+    {
+        "model": "movies.planet",
+        "pk": 2,
+        "fields": {
+            "name": "Mars",
+            "rotation_period": "3.4",
+            "orbital_period": "1.5",
+            "diameter": "456782m",
+            "climate": "warm",
+            "gravity": "10g",
+            "surface_water": "1245121m",
+            "population": "150000000"
+        }
+    },
+    {
+        "model": "movies.planet",
+        "pk": 3,
+        "fields": {
+            "name": "Jupiter",
+            "rotation_period": "3.4",
+            "orbital_period": "1.5",
+            "diameter": "456782m",
+            "climate": "warm",
+            "gravity": "10g",
+            "surface_water": "1245121m",
+            "population": "150000000"
+        }
+    },
+    {
+        "model": "movies.person",
+        "pk": 1,
+        "fields": {
+            "name": "Person1",
+            "height": "",
+            "mass": "",
+            "hair_color": "",
+            "skin_color": "",
+            "eye_color": "",
+            "birth_year": "",
+            "gender": "Male",
+            "homeworld": 1
+        }
+    },
+    {
+        "model": "movies.person",
+        "pk": 2,
+        "fields": {
+            "name": "Person2",
+            "height": "",
+            "mass": "",
+            "hair_color": "",
+            "skin_color": "",
+            "eye_color": "",
+            "birth_year": "",
+            "gender": "Female",
+            "homeworld": 2
+        }
+    },
+    {
+        "model": "movies.film",
+        "pk": 1,
+        "fields": {
+            "title": "My film1",
+            "episode_id": 1,
+            "opening_crawl": "",
+            "director": "Director1",
+            "release_date": "2019-12-12",
+            "producers": [
+                1
+            ],
+            "characters": [
+                1
+            ],
+            "planets": [
+                1,
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "movies.film",
+        "pk": 2,
+        "fields": {
+            "title": "My film2",
+            "episode_id": 1,
+            "opening_crawl": "",
+            "director": "Stiven",
+            "release_date": "2019-12-12",
+            "producers": [],
+            "characters": [],
+            "planets": []
+        }
+    },
+    {
+        "model": "movies.film",
+        "pk": 3,
+        "fields": {
+            "title": "My film3",
+            "episode_id": 1,
+            "opening_crawl": "",
+            "director": "Skywalker",
+            "release_date": "2019-12-12",
+            "producers": [
+                2
+            ],
+            "characters": [
+                1
+            ],
+            "planets": [
+                1
+            ]
+        }
+    }
+]

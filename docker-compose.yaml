@@ -1,0 +1,24 @@
+version: '3.7'
+x-web:
+  &default-web
+  image: 'starwars:latest'
+  environment:
+    - WDB_SOCKET_SERVER=wdb
+    - WDB_SOCKET_PORT=19840
+    - WDB_WEB_SERVER=localhost
+    - WDB_WEB_PORT=1984
+services:
+  wdb:
+    image: kozea/wdb:3.3.0
+    ports: ['1984:1984']
+  web:
+    <<: *default-web
+    command: >
+     sh -c "python manage.py migrate
+     && python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/src
+    links:
+      - wdb
